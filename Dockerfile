@@ -16,4 +16,5 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
 
 
-CMD ["java", "-Dserver.port=$PORT", "-jar", "target/hotel-booking-0.0.1-SNAPSHOT.jar"]
+CMD java -Dserver.port=$PORT -jar target/hotel-booking-0.0.1-SNAPSHOT.jar
+
